@@ -7,14 +7,14 @@
   <div class="col-xs-12">
     <a href="#" class="list-group-item clearfix">
       <div class="pull-left">
-        <h4 class="list-group-item-heading">Recipe Name</h4>
-        <p class="list-group-item-text">Description</p>
+        <h4 class="list-group-item-heading">Recipe Name: {{ recipes[0].name }}</h4>
+        <p class="list-group-item-text">Description: {{ recipes[0].description}}</p>
       </div>
       <span class="pull-right">
-        <img src="" alt="" class="img-responsive" style="max-height: 50px;">
+        <img [src]= recipes[0].imagePath alt="plaatje" class="img-responsive" style="max-height: 50px;">
       </span>
     </a>
-    <app-recipe-item></app-recipe-item>
+<!--    <app-recipe-item></app-recipe-item>-->
   </div>
 </div>
 
